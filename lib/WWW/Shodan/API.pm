@@ -4,7 +4,7 @@ use 5.006;
 use strict;
 use warnings FATAL => 'all';
 
-our $VERSION = '0.001';
+our $VERSION = '0.003';
 
 use Carp;
 use JSON;
