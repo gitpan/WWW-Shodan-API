@@ -288,7 +288,7 @@ Version 0.01
 
 =head1 OVERVIEW
 
-This module is to provide your Perl applications with easy access to the L<Shodan API|https://developer.shodan.io/api/>.
+This module is to provide your Perl applications with easy access to the L<Shodan API|https://developer.shodan.io/api>.
 
 =head1 SYNOPSIS
 
@@ -308,7 +308,7 @@ This module is to provide your Perl applications with easy access to the L<Shoda
 
 =item * In order to use the Shodan API you need to have an API key, which can be obtained for free by creating a L<Shodan account|https://account.shodan.io/register>.
 
-=item * Become familiar with the L<Shodan REST API Documentation|https://developer.shodan.io/api/>.
+=item * Become familiar with the L<Shodan REST API Documentation|https://developer.shodan.io/api>.
 
 =back
 
@@ -366,9 +366,9 @@ B<Note:> This method may use API query credits depending on usage. If any of the
 
 B<Parameters>:
 
-The first argument is the C<query> (required). It is a hash reference consisting of key/values pairs. For the full list of acceptable key/value pairs, consult the L<Shodan REST API Documentation|https://developer.shodan.io/api/>.
+The first argument is the C<query> (required). It is a hash reference consisting of key/values pairs. For the full list of acceptable key/value pairs, consult the L<Shodan REST API Documentation|https://developer.shodan.io/api>.
 
-The next argument is C<facets>, and will be a list of properties on which to summarize. It is an array reference containing strings and hash references. In the above example, the query response will include summary data for F<isp>, F<os>, and F<version>, however only the first 3 F<isp> results will be returned and only the first 2 F<os> results will be returned. The F<version> will also be summarized, but will not be limited to a particular count. All distinct F<version>s will be returned in the resultset. For the full list of acceptable facets, consult the L<Shodan REST API Documentation|https://developer.shodan.io/api/>.
+The next argument is C<facets>, and will be a list of properties on which to summarize. It is an array reference containing strings and hash references. In the above example, the query response will include summary data for F<isp>, F<os>, and F<version>, however only the first 3 F<isp> results will be returned and only the first 2 F<os> results will be returned. The F<version> will also be summarized, but will not be limited to a particular count. All distinct F<version>s will be returned in the resultset. For the full list of acceptable facets, consult the L<Shodan REST API Documentation|https://developer.shodan.io/api>.
 
 The third argument is an optional hash reference which may contain one or both of the following keys:
 
