@@ -4,7 +4,7 @@ use 5.006;
 use strict;
 use warnings FATAL => 'all';
 
-our $VERSION = '0.004';
+our $VERSION = '0.005';
 
 use Carp;
 use JSON;
@@ -147,9 +147,6 @@ sub search {
 
     $end_point .= '&minify=false' if defined $args->{NO_MINIFY};
 
-    warn "Endpoint is $end_point";
-    warn "str is $str";
-
     my $response = $ua->get( BASE_URL . $end_point );
     if ( $response->is_success ) {
         return $json->decode( $response->decoded_content );
@@ -175,9 +172,6 @@ sub tokens {
     $str       =~ s/\+$//;
     $end_point =~ s/QUERY/$str/;
     $end_point =~ s/&query=// unless scalar keys %$query;
-
-    warn "Endpoint is $end_point";
-    warn "str is $str";
 
     my $response = $ua->get( BASE_URL . $end_point );
     if ( $response->is_success ) {
@@ -232,9 +226,6 @@ sub count {
     $end_point =~ s/FACETS/$str/;
     $end_point =~ s/&facets=// unless scalar @$facet;
 
-    warn "Endpoint is $end_point";
-    warn "str is $str";
-
     my $response = $ua->get( BASE_URL . $end_point );
     if ( $response->is_success ) {
         return $json->decode( $response->decoded_content );
@@ -281,7 +272,7 @@ WWW::Shodan::API - Interface for the Shodan Computer Search Engine API
 
 =head1 VERSION
 
-Version 0.004
+Version 0.005
 
 =cut
 
