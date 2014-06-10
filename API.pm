@@ -4,7 +4,7 @@ use 5.006;
 use strict;
 use warnings FATAL => 'all';
 
-our $VERSION = '0.006';
+our $VERSION = '0.007';
 
 use Carp;
 use JSON;
@@ -272,7 +272,7 @@ WWW::Shodan::API - Interface for the Shodan Computer Search Engine API
 
 =head1 VERSION
 
-Version 0.006
+Version 0.007
 
 =cut
 
